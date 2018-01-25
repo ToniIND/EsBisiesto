@@ -2,17 +2,22 @@
 
 anio=input("Introdueix un any: ")
 
-if anio%400 == 0:
+def esBisiesto (anio):
 
-	print "es bisiesto"
+	if (anio%4==0 and anio%100!=0) or anio%400==0:
 
-else:
+		print "És bisiesto"
 
-	if anio%100 == 0:
-
-		print "no es bisiesto"
 	else:
 
-		if anio%4 == 0:
+		print "No és bisiesto"
 
-			print "es bisiesto"
+esBisiesto(anio)
+
+anio2=input("Introdueix un any: ")
+
+esBisiesto(anio2)
+
+anio3=input("Introdueix un any: ")
+
+esBisiesto(anio3)

@@ -1,0 +1,3 @@
+#coding: utf8
+
+anio=raw_input("Introdueix un any")
